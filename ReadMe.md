@@ -1,13 +1,13 @@
-#SirPuli's config files#
+# SirPuli's config files
  
-##Folders:##
+## Folders:
 |Folder name    |Where to put it|
 |:-------------:|:-------------:|
 |.oh-my-zsh     | ~/            |
 |latte          | ~/.config     |
 |neofetch       | ~/.config     |
 
-##Files##
+## Files:
 |File name      |Where to put it|
 |:-------------:|:-------------:|
 |.zshrc         | ~/            |
