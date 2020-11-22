@@ -56,6 +56,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias path='echo -e ${PATH//:/\\n}'
+alias pk='pulseaudio -k'
 #alias neofetch='neofetch --ascii /home/sirpuli/.config/neofetch/puli.txt'
 
 neofetch
