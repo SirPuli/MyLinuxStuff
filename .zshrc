@@ -2,13 +2,15 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
 if [ -d "$HOME/.local/bin" ]; then
     export PATH=$HOME/.local/bin:$PATH
 fi
 
 ZSH=~/.oh-my-zsh/
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 plugins=(git git-extras archlinux adb cp python docker sudo command-not-found)
 
@@ -17,6 +19,7 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -56,10 +59,16 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias path='echo -e ${PATH//:/\\n}'
-alias pk='pulseaudio -k'
+alias excon='expressvpn connect'
+alias exusa='expressvpn connect usda'
+alias exhu='expressvpn connect hu'
+alias exdis='expressvpn disconnect'
+alias exlist='expressvpn list all'
+alias exstart='sudo systemctl start expressvpn'
+alias exstat='expressvpn status'
+#alias pk='pulseaudio -k'
 #alias neofetch='neofetch --ascii /home/sirpuli/.config/neofetch/puli.txt'
 
-neofetch
+neofetch | lolcat
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true

@@ -12,23 +12,26 @@ location=3
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
 
-[Containments][13][Applets][120]
+[Containments][13][Applets][132]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
-[Containments][13][Applets][120][Configuration]
-PreloadWeight=18
+[Containments][13][Applets][132][Configuration]
+PreloadWeight=0
 
 [Containments][13][Applets][44]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][13][Applets][44][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][13][Applets][44][Configuration][ConfigDialog]
 DialogHeight=591
 DialogWidth=936
+
+[Containments][13][Applets][44][Configuration][General]
+raiseMaximumVolume=true
 
 [Containments][13][Applets][45]
 immutability=1
@@ -42,7 +45,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][13][Applets][46][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][13][Applets][47]
 immutability=1
@@ -89,10 +92,10 @@ DialogHeight=811
 DialogWidth=930
 
 [Containments][13][General]
-extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,Notificador de Discover_org.kde.DiscoverNotifier,octopi-notifier,org.kde.plasma.devicenotifier,org.kde.kdeconnect,SimpleScreenRecorder,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.mediacontroller
+extraItems=org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.kdeconnect,org.kde.plasma.weather,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardlayout
 hiddenItems=SimpleScreenRecorder,org.kde.plasma.battery
-knownItems=org.kde.kdeconnect,org.kde.ktp-contactlist,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller_plus
-shownItems=octopi-notifier,org.kde.plasma.weather
+knownItems=org.kde.kdeconnect,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.keyboardindicator,org.kde.plasma.mediacontroller,org.kde.plasma.networkmanagement,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardlayout
+shownItems=octopi-notifier,org.kde.kdeconnect,org.kde.plasma.weather
 
 [Containments][15]
 activityId=
@@ -115,6 +118,46 @@ viewType=1
 visibility=0
 wallpaperplugin=org.kde.image
 
+[Containments][15][Applets][100]
+immutability=1
+plugin=org.kde.windowtitle
+
+[Containments][15][Applets][100][Configuration]
+PreloadWeight=0
+
+[Containments][15][Applets][100][Configuration][ConfigDialog]
+DialogHeight=878
+DialogWidth=924
+
+[Containments][15][Applets][100][Configuration][General]
+containmentType=Latte
+filterByScreen=true
+lengthFirstMargin=4
+lengthMarginsLock=false
+showIcon=false
+subsMatch="Telegram Desktop","Gimp-.*","Vivaldi-.*","Add/Remove Software"
+subsReplace="Telegram","Gimp","Vivaldi","Pamac"
+
+[Containments][15][Applets][102]
+immutability=1
+plugin=org.kde.plasma.chiliclock
+
+[Containments][15][Applets][102][Configuration]
+PreloadWeight=0
+
+[Containments][15][Applets][102][Configuration][Appearance]
+customDateFormat=dd MMM yyyy
+dateFormat=customDate
+enabledCalendarPlugins=/usr/lib/qt5/plugins/plasmacalendarplugins/holidaysevents.so,/usr/lib/qt5/plugins/plasmacalendarplugins/pimevents.so
+fixedFont=true
+fontFamily=SFNS Display
+fontSize=14
+use24hFormat=2
+
+[Containments][15][Applets][102][Configuration][ConfigDialog]
+DialogHeight=552
+DialogWidth=640
+
 [Containments][15][Applets][103]
 immutability=1
 plugin=org.kde.plasma.appmenu
@@ -122,73 +165,63 @@ plugin=org.kde.plasma.appmenu
 [Containments][15][Applets][103][Configuration]
 PreloadWeight=0
 
-[Containments][15][Applets][112]
-immutability=1
-plugin=org.kde.plasma.simplemenu
-
-[Containments][15][Applets][112][Configuration]
-PreloadWeight=52
-
-[Containments][15][Applets][112][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][15][Applets][112][Configuration][General]
-customButtonImage=start-here
-favoriteSystemActions=logout,lock-screen
-favoritesPortedToKAstats=true
-useCustomButtonImage=true
-
-[Containments][15][Applets][117]
+[Containments][15][Applets][129]
 immutability=1
 plugin=org.kde.plasma.eventcalendar
 
-[Containments][15][Applets][117][Configuration]
-PreloadWeight=22
+[Containments][15][Applets][129][Configuration]
+PreloadWeight=47
 
-[Containments][15][Applets][117][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
+[Containments][15][Applets][129][Configuration][ConfigDialog]
+DialogHeight=1023
+DialogWidth=1920
 
-[Containments][15][Applets][117][Configuration][General]
-clock_fontfamily=Roboto
-clock_line_2_height_ratio=0.3
-clock_timeformat=yyyy. MMM d, H:mm
+[Containments][15][Applets][129][Configuration][Events]
+enabledCalendarPlugins=/usr/lib/x86_64-linux-gnu/qt5/plugins/plasmacalendarplugins/holidaysevents.so,/usr/lib/qt/plugins/plasmacalendarplugins/astronomicalevents.so
 
-[Containments][15][Applets][117][Configuration][Google Calendar]
-calendar_list=W10=
-tasklistList=W10=
+[Containments][15][Applets][129][Configuration][General]
+clockLine2HeightRatio=0.45999999999999996
+clockTimeFormat1=MMM d, H:mm
+v71Migration=true
 
-[Containments][15][Applets][117][Configuration][Weather]
-weather_city_id=721239
+[Containments][15][Applets][129][Configuration][Google Calendar]
+accessToken=ya29.a0AfH6SMBbkNoC2QrlAdFHwHICJQRisqd2LS5ZG_-HCZec7FvCefrgFmfBSYPiRnvpVyJsnvxomYnoY7riGsptRwB-W4dWvtqM9r6U7ddlAiujO-dIatwxG11Leu3EaEdW3MD0X-c3F7A0Hi6xjN4bUBjLyyS01A
+accessTokenExpiresAt=330562990
+accessTokenType=Bearer
+calendarIdList=gergopauli2@gmail.com,addressbook#contacts@group.v.calendar.google.com
+calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU1MTcxODMzNzU0OTAwMFwiIiwiaWQiOiJlbi5odW5nYXJpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiSG9saWRheXMgaW4gSHVuZ2FyeSIsImRlc2NyaXB0aW9uIjoiSG9saWRheXMgYW5kIE9ic2VydmFuY2VzIGluIEh1bmdhcnkiLCJ0aW1lWm9uZSI6IkV1cm9wZS9CdWRhcGVzdCIsImNvbG9ySWQiOiIxNyIsImJhY2tncm91bmRDb2xvciI6IiM5YTljZmYiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNTUxNzE4MzM3NTQ5MDAwXCIiLCJpZCI6Imh1Lmh1bmdhcmlhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiLDnG5uZXBuYXBvayDigJMgTWFneWFyb3JzesOhZyIsImRlc2NyaXB0aW9uIjoiw5xubmVwbmFwb2sgw6lzIGhhZ3lvbcOhbnlvayDigJMgTWFneWFyb3JzesOhZyIsInRpbWVab25lIjoiRXVyb3BlL0J1ZGFwZXN0IiwiY29sb3JJZCI6IjE3IiwiYmFja2dyb3VuZENvbG9yIjoiIzlhOWNmZiIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE1NTM1MDk0MjI2MDIwMDBcIiIsImlkIjoiYWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IlN6w7xsZXTDqXNuYXBvayIsImRlc2NyaXB0aW9uIjoiTWVnamVsZW7DrXRpIGEgR29vZ2xlIE7DqXZqZWd5ZWtiZW4gc3plcmVwbMWRIHN6ZW3DqWx5ZWsgc3rDvGxldMOpc25hcGrDoXQsIMOpdmZvcmR1bMOzaXQgw6lzIG3DoXMgZXNlbcOpbnllaW5layBkw6F0dW1haXQuIiwidGltZVpvbmUiOiJFdXJvcGUvQnVkYXBlc3QiLCJzdW1tYXJ5T3ZlcnJpZGUiOiJDb250YWN0cyIsImNvbG9ySWQiOiIxNyIsImJhY2tncm91bmRDb2xvciI6IiM5YTljZmYiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjEzOTI2MTU5NzQ0MDAwXCIiLCJpZCI6ImdlcmdvcGF1bGkyQGdtYWlsLmNvbSIsInN1bW1hcnkiOiJnZXJnb3BhdWxpMkBnbWFpbC5jb20iLCJ0aW1lWm9uZSI6IkV1cm9wZS9CdWRhcGVzdCIsImNvbG9ySWQiOiIxNSIsImJhY2tncm91bmRDb2xvciI6IiM5ZmM2ZTciLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJvd25lciIsImRlZmF1bHRSZW1pbmRlcnMiOlt7Im1ldGhvZCI6InBvcHVwIiwibWludXRlcyI6MTB9XSwibm90aWZpY2F0aW9uU2V0dGluZ3MiOnsibm90aWZpY2F0aW9ucyI6W3sidHlwZSI6ImV2ZW50Q3JlYXRpb24iLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2hhbmdlIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudENhbmNlbGxhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRSZXNwb25zZSIsIm1ldGhvZCI6ImVtYWlsIn1dfSwicHJpbWFyeSI6dHJ1ZSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX1d
+refreshToken=1//09usuMxqhJg49CgYIARAAGAkSNwF-L9IrDAXceIvsi82tzJMPouAwfyQu52Bc1U7V66CMDf7cxyWY52xWWcOrjubMQW-U4j01wiA
+sessionClientId=391436299960-k0s16nm589meovhoblpcquqgbbrena17.apps.googleusercontent.com
+sessionClientSecret=Gdr_7lKIQuGBD4Up3MOiw-7i
+tasklistList=W3sia2luZCI6InRhc2tzI3Rhc2tMaXN0IiwiaWQiOiJNVE0zTlRBM01EZzFNekk0TmpZNE1ERXlNVFU2TURvdyIsImV0YWciOiJcIkxURXlOalV6TURjek5qY1wiIiwidGl0bGUiOiJNeSBUYXNrcyIsInVwZGF0ZWQiOiIyMDE5LTA3LTAyVDIxOjI2OjI4LjQ5N1oiLCJzZWxmTGluayI6Imh0dHBzOi8vd3d3Lmdvb2dsZWFwaXMuY29tL3Rhc2tzL3YxL3VzZXJzL0BtZS9saXN0cy9NVE0zTlRBM01EZzFNekk0TmpZNE1ERXlNVFU2TURvdyJ9XQ==
 
-[Containments][15][Applets][119]
+[Containments][15][Applets][129][Configuration][Weather]
+openWeatherMapCityId=721239
+
+[Containments][15][Applets][130]
 immutability=1
-plugin=org.kde.windowtitle
+plugin=org.kde.plasma.simplemenu
 
-[Containments][15][Applets][119][Configuration]
-PreloadWeight=2
+[Containments][15][Applets][130][Configuration]
+PreloadWeight=0
 
-[Containments][15][Applets][119][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
+[Containments][15][Applets][130][Configuration][General]
+favoriteSystemActions=logout,lock-screen
+favoritesPortedToKAstats=true
 
-[Containments][15][Applets][119][Configuration][General]
-boldFont=false
-containmentType=Latte
-filterActivityInfo=false
-iconFillThickness=false
-placeHolder=Desktop
-showIcon=false
-subsMatch="Telegram Desktop","GNU Image Manipulation Program","Vivaldi.*"
-subsReplace="Telegram","Gimp","Vivaldi"
+[Containments][15][Applets][131]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][15][Applets][131][Configuration]
+PreloadWeight=0
 
 [Containments][15][Applets][56]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][15][Applets][56][Configuration]
-PreloadWeight=67
+PreloadWeight=100
 SystrayContainmentId=13
 
 [Containments][15][Applets][57]
@@ -229,7 +262,7 @@ lengthMargin=1
 thickMargin=20
 
 [Containments][15][ConfigDialog]
-DialogHeight=902
+DialogHeight=904
 DialogWidth=600
 
 [Containments][15][Configuration]
@@ -238,7 +271,10 @@ PreloadWeight=0
 [Containments][15][General]
 alignment=10
 alignmentUpgraded=true
-appletOrder=58;112;119;103;117;56
+animationLauncherBouncing=false
+animationWindowAddedInGroup=false
+animationWindowInAttention=false
+appletOrder=58;130;100;103;129;131;56
 autoSizeEnabled=false
 dragActiveWindowEnabled=true
 durationTime=x1
@@ -247,16 +283,15 @@ hideScreenGapForMaximized=true
 iconSize=28
 inConfigureAppletsMode=true
 lengthExtMargin=2
-lockedZoomApplets=117
 maxLength=96
-panelPosition=Right
-panelShadows=false
+panelPosition=10
 panelSize=100
 panelTransparency=90
 plasmaBackgroundForPopups=true
 screenEdgeMargin=8
 shadowColorType=Theme
 shadowOpacity=20
+shadows=None
 shadowsUpgraded=true
 solidBackgroundForMaximized=true
 splitterPosition=4
@@ -270,6 +305,8 @@ zoomLevel=0
 [Containments][15][Indicator]
 customType=
 enabled=true
+enabledForApplets=true
+padding=0.07999999821186066
 type=org.kde.latte.plasma
 
 [Containments][15][Indicator][org.kde.latte.default][General]
@@ -304,13 +341,6 @@ plugin=org.kde.latte.separator
 [Containments][16][Applets][109][Configuration]
 PreloadWeight=0
 
-[Containments][16][Applets][115]
-immutability=1
-plugin=org.kde.plasma.clipboard
-
-[Containments][16][Applets][115][Configuration]
-PreloadWeight=17
-
 [Containments][16][Applets][59]
 immutability=1
 plugin=org.kde.latte.plasmoid
@@ -321,7 +351,7 @@ PreloadWeight=0
 [Containments][16][Applets][59][Configuration][General]
 hoverAction=PreviewWindows
 isInLatteDock=true
-launchers59=applications:vivaldi-snapshot.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.ksysguard.desktop,applications:systemsettings.desktop,file:///usr/bin/pamac-manager?iconData=iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA-IAAAPiAEWyKWGAAAFuUlEQVRoge2YW2wUZRTHf-ebSxeoBQJoRK2IiRfQiBcejCUaEVvAaNRURaM-eImJQRMhIqWYpUi9ESNR44M--OAlhhBCI6KICCnyYESQkGC5-IAiiaXBC5Tt7swcH2aBbndmd7p06wv_ZDK733fO_5zzzZnznW_gHM7hrCDVIJ2d1inZHNeqYSyK2MIxLHZtTMsvQ21rSAJoatX7csqz6nG97zFGNZpXBDU2x4zNLkdY9dUr0nG2tisO4La0pqwc7_k55gUeIyrhsGx6jcOnvsP8LWnJVMJRUQCzWrXdy7LQ93Aq0S9ywibr1PDGpuWydNC6gxG-I631QR_bvT4uGqyhJLBdDtWM5ZYNi-T3pDomqWBji871ejlQLecBvCz1vT0cnNmqTUl1EgXQ-LI-msnREQxRypSCerheH-vvXKoPJZEvm0KNrdqUybBeg-RPaygghsBxmbOpXb4uKVdq8o601nu9HIhb-deeBNeCDzbA3kODc_DqenhqNmR9eOnDGOdssqnRTPp6iRyJ4ym5qkEf20ulzWUXwI1XwOQLk7p9BpdPDHUnXRAvox5u7jjbS_HEBjBrqS4r98LuPxzep19RSioa068M7_vK1Buvj0kzW7Utbj4ygNvSmvL6WFzOic494b3hWpg4rpz0GVw8Hhqmhr-37SkvH2RZ1JxWN2ouMgAn4N0km9S3O-HwUXAsWPIwOHZ5Z2wLXnwwvP_RA9_tKq_je7jHsrwdNRcZgCrzytOC58PbayEI4JpJ8PqTMHpUvPyYWnjzabhucqjz1hrI-UksgZ_jsajxoio0d7ne3ZdlXfZEMmKA-2fA_HtABI6fhDXb4Ps9cKg7nK8_P0yZ-xqgdgSowjvrYE1nchsIpEYxZ2ObbOg_XPTQPZgvEjqjmox7TSf0_A0LmqFuJDw-K7yi8E8vrFwNW3cPwnkABd_nOaB0APjcAGBs8HPJ-bfshh37oflWuH0aXDKhcP63bti8C1ZvhX9PDtL5PAKfmwaOFaXQrJc1ACTwIFdRgxti7HkwYXT4u_tvOPZv5VynIIZg60qxCsb6_7mrXa_qy7D31P_sieRpNFyoq-PSL9Jyet8vqEIeTOn_3yQoi8MJMeA5jOk_NrCMFmSu5Vbp0FwhjAVBb4kAVCmoyiJgqt5AJ4flgBgKkrowAIvDRUpuGMj_DTHhZY3ir_7jBQE4SleRooBdU233ysPOd0ImQ0FrXVxG0xoQFI97GfC9arlXGiLgjgSEnm_aZHz_uaJeSITuKBI7BWZYz2RnYNUQLrXw88C5IpeM4cc4InvE8L8PxoCV37pU-K5oPmLg_bjaKQLOyOELQgSsFKcT3TKsLZKJUmxs038Cj_PiiFXBOxm2xNWEXROWTgARftq4TG4cKBOZ1SJ8VIr41JOwqrhTG6uQX4RVkXJRgxmfF8WQLWfEToGTGvqUEhNyn84Pw4G6KXwSJRsZwJa0ZIzL4iR9hLHzT2OI2g4x4AwsFhYLVj8gkWe3kjab2vSg7zE5qXHV8AwR5CrrYgc6bxywLD79skUeidMpmcVuDTMyyq_qk2gvFsnvmC4EPgReeNcEL7uxwjJtOeFTNTaI0GV8nilpsxxxU7veHGTp1ACrnGwpaJC_FFBQ8iudD9oZAQVHFaU7MDR8uUD2nVUAAI0r9AHN8dlQfx8VE666KV6aP43Q1LFAdpblSGpsbrvOyOX4Jmk6lbNqubFNYpcx3NXxghxIQpV4Rde3SGetzWXG4WDF5Sbf2bq10c6L8rHxmZ7U-Tzl4DG7XRf6WVZoQOTnvoEWjJWvKHasxS6F59cvLP0pPYa-MjSn1T3h8Jrn8YQG1J0-J0mY28YKX8p8NYnDD6KsSl3K53F1vhyGZA-d_areKTAHi2nGMBUYHyN6FNgBbDY-6zoWSdEBarCoSl95b7uOyzpcaAy1AEHAcTfHkbUt0lMNe-dwDmeB_wDR0b2yb9Bg4wAAAABJRU5ErkJggg%3D%3D,applications:gimp.desktop,applications:code-oss.desktop,applications:discord.desktop,applications:teamspeak3.desktop?iconData=iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAA-IAAAPiAEWyKWGAAAKoUlEQVRogb2aeXRU1RnAf9-dyQ5igJAQFAZZAgY3KBCtxbgWRYFWQY1FsUWoWlGrtm6obaVGK7Z6KojlVCGCKFotVEQPVlS0AkJkNVEiQ0AMhNWEhJB59-sfk3mzZLJAgHtOzrt57y7f737bve-NcAyKL39MlsdJyFcYYqzNVaxPVTNENVXVoqo1qFaC-hU2YgMrqdFl_k2LK9o6txxtx-7nF6QnJCSME9UCtTpYsEZVIfSHdeuqkXUFFFW1qF0FOs8elqLy9e_sOyEAvvzxWR6P536jOgHVNLCEBY-stwwR0f4g6CwOSeGRaqX1AIMmJvTuxD1GeUjVtiNG0GMAgahWKzrVX1w5DVbXHzOAnsNvzfEi80R1YHjCsDDHEgJVFF1T71CwY92S0pZk87TUIOeKyaOMmHcFfCFmicsuiETUY56FbkQ-CTePbi_Q1SPc1D6r16YfKsqahWgWoN9Vv52kMFuQ5JgZjzsEkCTCmPTM3jv379y8-ogB-oy6d5KozhAwUZOeQAgBo8KI9MzeFU1BxPWBnKvuHYWRN1H1EGPvqpZIm470iZ7dMsk7O4cBfXvQo1sX0ju0x-sxVNfUsqNiNxtKt7B85Vo2lJS5Nt9Kn3Cs6tXbvnzv3y0C5Ix8OEc8gVWq2j7aUeNDJCd6ueayc7luxDD6-LLjrUejUrb1O_45_x3eXPwhgfpAqyBQrTpsGRzr2NEAgyYm9PNlfE6T0SYa4sKhuTxy6xiyu3RsJGTtoTr27q9CgfQO7UhLSW7UZrN_Ow8WzmTNupJWR6etxZV5kSE2CqDfmCn3ozwRFjQ-hBG47-arGD86H2kweFVl9cbNLPxgJf9bs4nyHbtQ29AP5ZTMTpw36HRG__THDBrQ1-3nOA7PvDifmUVvt04T6AP-4iWFjQB8Yx7LSha-wU1S8SE8Ak_efT1XXjDQBV9b4ufPM9_gy6--bQI6Ok8MPrMvUyaPo3_vHu4Yry38gClPvYjjBFpOdnXSJ5Sx3SjU9ayLHweGhZnC18hoM-HnFzJ-1DB31WfMf5_fP_MK31fujds-XMLRacfOPSx45yOSkxI4J7cPIsKAnNM4WHOI4g1fR_QIVaKiUyJeTdj__eYl0BAiuxc8ka5iJiAGRIh3lYZru9RkV_hHn1_Ac3OXYG3DUCKN2ofvCRC6LwQcy5MzXuUPf5vdsNKQnJwUFDaiX9DUIscUQCZ0P2NEuguQgo4DSQtO2DSELzuDm0b-BIDpry3l9fdXRkxkjhgCMcx9eynTi4LRceINIzklO7M1EGkmUce5AGK8BRIlcHyIe2-8nOTEBNZ-Xc701z-IaXP0EM-99BbrviojNSWZ-35dED1eUxBIAYDxjX8qC2MGqxiag-h1aiYXDemPqvLky4txlChB2wJhVSmcMR9V5fILh9LjlK4tQiBmsO_0K7JMCt58ECMiNAcxOv8cjAjrN2-nuHRbHKHaBrFqXSklZeUYY_jZ8GFR_eNBiIghVfINYobgCt80xAUD-wLw7mcbmxGqbRDvffwFAPnnnuM-a1YTxjvEqJjc0MOmIE7N7EivbhkArC4pj9LMsYRYvf4bAPr16k7XLp1ahBDINYj4IgWOhcgb4OOtwlswJhiJ_Tv3NXLwYwWxZftOALxeD4vnPMmQs_s3CwHiMyImI3bVIyEevuky0lKS3NhfXXu4kYMfK4i9B6rdbNU-LZVH7xofBRgHIsOrIqkiBsGiGATQhnqiVzgtu5M7qFVFCQ7i9SQwcfR5ZJzcjgVLv2BT2XfuGGAbeoTrggnuKCT8LLZ9wLFYazHGANDbl43H48FxnGAXNW5_CfZL9YoY1FjENoYQ4yG06QIwoVUDbhqRxx1jLwJg7CU_Yv77K3mm6D0O1h5qE4S1SoP8GGPweL1Ya9GQEDEQBpGaIERYta45mbDwAJHJ59wzTguDGUPB8Dze-Mvt9Ome1UZzipoS0xAJJcLUQv1VpMYopjI0cCyEY6E-4LiDqaprfyelNd7f-7I7M3fqJAb279k0hBEGn9GbhyZdw6vT7uHvUyaSldHRbR-p8brD9dQ7TgxoVOSq9IoxfpS-YIMqjjCngFU-21TOBWf2dNWrEjSxyv0HGwEAtE9L5oUHb-T6B1-gbNtO1zySEr2MvXQoBSPOo2e3LlF9du09wB-ffw3B4gnZD_DJqg2oBkOmRplcg0Wo8RvEszGoEkM8TTwy-0NWlGxHVdlXXetq57MN_rgAIYin774Wj8eLiNCnR1cWPnsPD00c3Uh4AK_X667ygaoaVJUVa0t55NlXovJErCasMRu9iK7EmKAPCcRqonJ_DeOfeouTUhIIOE6DBixvLd_IxJHn0iW9XVyIfr6u9MjuzLfbd_HwhJH0yO7cJPAnq79qEBQuHj-FpAQPu_ceCJ7QQialBhEbpQlUV5paZZkVY4Ou37Qmfqitp7Yu4OaJ2roAdzz7Njt2H4grVIm_gvJd-0GExZ-upz4QiNtuyfIvWfr5BsDQpdPJWIXd-6sbOX-sJhRjHU_9MgHo95s5n6M6VNQSPJ1Y90ioahEbPtaJWvfsKmrxGCHX14XM9HZ0SEsiJdFL5b4q_vtFCXV1h91jaXq7FHJ7ZdM9qyNdO3cgKcHLutKtvPNxMdZxQJWpd13HD1UHKfzHv5o5k7vH0xWbl83J8wKoeOYJdqjSEOabMKd4yc6xlrVlFVFgwQltxGCGfdW1LP9ycxyhABE6p7dnxLCBlG3bGTabOHkiZE4qdl6wBVAboEiMHEQMKoaWzKm5vVNY9U2f7OKF2Pt-OZLkpEQ8nlZtOw7W19cXuQDlM27YZzGzQh1ONMQvrjyfkfmDANhesbfFZGdFZpUvn7fPBQCoC3gLEVN9IiGMx3DbtZfw0C2j3AS29PP1zWZsEVPtOI77XsgF8E8fWwFMjZzgeEIM6H0Kr_xpEpOvv8wVvrjEz6KPil2h40FYYap_2cvuVxxvVOg7VDWtf0qHMQoDQ853NI4dey-0Tu1SErjgnN5cnX82eWecFrVtWPfNNm5_Yk7DWTv-BlBhzebdTIuUOWbrBDl3vp4jYldhbfvIt3NHEmIFpU92R3xZ6WSenEaPrHRye2aS27MrCd7oN_qV-6qYvehT5vxnOYfrA02_i8VW1dvA4C1LZjTzcjcEMXn-KBHeRK3naCAyOqRy8_CB9MruSKeTUklJDG4p6uoDHKiupWLPAcq2V1JcWs6akq04gQBNx32Lqjqi9urSxc-1_Ho9VPrduWASODNQK0erCdy6xs8TMe9g40NYFbi1ZNEzM-PJ2eQXmt0rFqzunHdtBcLluM4e5JWgcbv4gqASvAYfRX9_iXev8RpKVPuG_x0rctvXC6fFFT52pLglZ_L8UWIoaotPHKUmqjQQGFe66OlGZnNEABB0bIOdp2oHniCINVovBaULH2_7Z1aAPSsW7Nl91qUvdfYm1SCSByQeJ3OqBn20ZMuuX-1Z9tddrZGtVRqILL7bXs9K8gbuN9gJajXtmGgCPShqZ9UGnEL_gseO008NYkr3W-emp3gZJ-oUqOpgo9YcCQSoxdpVagPzapGi8nkPnJgfe8QrvtteykoR8lEZgjq5aq1PsBmqmhrUkNao2kpU_aJ2I2pX1hJY5n_5d23-uc3_ATbhPzcZrya7AAAAAElFTkSuQmCC,applications:steam.desktop,applications:net.lutris.Lutris.desktop
+launchers59=applications:vivaldi-stable.desktop,applications:bitwarden.desktop,applications:systemsettings.desktop,applications:org.kde.dolphin.desktop,applications:org.kde.ksysguard.desktop,applications:gimp.desktop,applications:org.manjaro.pamac.manager.desktop
 manualScrollTasksType=VerticalHorizontal
 scrollTasksEnabled=true
 
@@ -346,7 +376,7 @@ labelStyle=0
 occupiedIndicatorColor=#26292e
 
 [Containments][16][ConfigDialog]
-DialogHeight=902
+DialogHeight=904
 DialogWidth=600
 
 [Containments][16][Configuration]
@@ -355,17 +385,18 @@ PreloadWeight=0
 [Containments][16][General]
 advanced=false
 alignmentUpgraded=true
-appletOrder=59;109;60;115
-backgroundOnlyOnMaximized=true
+appletOrder=59;109
+durationTime=x1
 editBackgroundOpacity=0.5
-iconSize=45
+iconSize=44
 inConfigureAppletsMode=true
 lastWindowsVisibilityMode=8
-lockedZoomApplets=60
+lengthExtMargin=10
 manualScrollTasksType=VerticalHorizontal
+panelShadows=false
 panelSize=100
-panelTransparency=0
-screenEdgeMargin=11
+panelTransparency=80
+screenEdgeMargin=8
 scrollAction=ScrollToggleMinimized
 scrollTasksEnabled=true
 shadowColor=263238
@@ -377,21 +408,22 @@ splitterPosition=1
 splitterPosition2=2
 taskScrollAction=ScrollNone
 tasksUpgraded=true
-thickMargin=13
+thickMargin=15
 unifiedGlobalShortcuts=false
-zoomLevel=8
+zoomLevel=4
 
 [Containments][16][Indicator]
 customType=org.kde.latte.dashtopanel
 enabled=true
 enabledForApplets=true
 padding=0.20000000298023224
-type=org.kde.latte.default
+type=org.kde.latte.plasma
 
 [Containments][16][Indicator][org.kde.latte.dashtopanel][General]
 style=Ciliora
 
 [Containments][16][Indicator][org.kde.latte.default][General]
+activeStyle=Dot
 extraDotOnActive=true
 glowEnabled=true
 glowOpacity=0.2
@@ -400,11 +432,6 @@ minimizedTaskColoredDifferently=true
 [Containments][16][Indicator][org.kde.latte.unity][General]
 style=Dot
 
-[Containments][16][Indicator][org.kde.latte.win10][General]
-appletPadding=0
-lengthPadding=0.25
-maxBackgroundOpacity=0.25
-
 [LayoutSettings]
 background=
 backgroundStyle=0
@@ -412,7 +439,7 @@ color=red
 customBackground=
 customTextColor=fcfcfc
 icon=
-lastUsedActivity=7f096d97-1ca5-44e0-8605-de351fca3f63
+lastUsedActivity=f1751868-5890-43b3-988a-5fc311311954
 launchers=
 preferredForShortcutsTouched=true
 showInMenu=true
