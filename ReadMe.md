@@ -6,6 +6,7 @@
 |.oh-my-zsh     | ~/            |
 |latte          | ~/.config     |
 |neofetch       | ~/.config     |
+|Proton         | ~/.steam/root/compatibilitytools.d |
 
 ## Files:
 |File name      |Where to put it|

@@ -42,7 +42,7 @@ alias sp='sudo pacman'
 alias update='sudo pacman -Syyu'
 alias aup="pamac upgrade --aur"
 alias grubup="sudo update-grub"
-alias orphaned="sudo pacman -Rns $(pacman -Qtdq)"
+alias orphend="sudo pacman -Rns $(pacman -Qtdq)"
 alias fixpacman="sudo rm /var/lib/pacman/db.lck"
 alias untar='tar -zxvf '
 alias wget='wget -c '
@@ -67,8 +67,13 @@ alias exlist='expressvpn list all'
 alias exstart='sudo systemctl start expressvpn'
 alias exstat='expressvpn status'
 #alias pk='pulseaudio -k'
-#alias neofetch='neofetch --ascii /home/sirpuli/.config/neofetch/puli.txt'
-
-neofetch | lolcat
+alias neofetch='neofetch | lolcat'
+alias swapoff='sudo swapoff -a'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/sirpuli/.sdkman"
+[[ -s "/home/sirpuli/.sdkman/bin/sdkman-init.sh" ]] && source "/home/sirpuli/.sdkman/bin/sdkman-init.sh"
+
+neofetch
