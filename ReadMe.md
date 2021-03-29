@@ -7,6 +7,7 @@
 |latte          | ~/.config     |
 |neofetch       | ~/.config     |
 |Proton         | ~/.steam/root/compatibilitytools.d |
+| Metro         | ~/.steam/root/skins/ |
 
 ## Files:
 |File name      |Where to put it|
