@@ -69,6 +69,7 @@ alias exstat='expressvpn status'
 #alias pk='pulseaudio -k'
 alias neofetch='neofetch | lolcat'
 alias swapoff='sudo swapoff -a'
+alias shutdown='shutdown -h now "Ye"'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

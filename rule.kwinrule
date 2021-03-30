@@ -1,0 +1,41 @@
+[Settings for Cemu]
+Description=Settings for Cemu
+desktop=3
+desktoprule=3
+wmclass=cemu
+wmclassmatch=2
+
+[Settings for Diablo]
+Description=Settings for Diablo
+desktop=3
+desktoprule=3
+wmclass=diablo
+wmclassmatch=2
+
+[Settings for Heroes]
+Description=Settings for Heroes
+desktop=3
+desktoprule=3
+wmclass=heroes
+wmclassmatch=2
+
+[Settings for Idea]
+Description=Settings for Idea
+desktop=2
+desktoprule=3
+wmclass=idea
+wmclassmatch=2
+
+[Settings for Lutris]
+Description=Settings for Lutris
+desktop=3
+desktoprule=3
+wmclass=lutris
+wmclassmatch=1
+
+[Settings for Vivaldi]
+Description=Settings for Vivaldi
+desktop=1
+desktoprule=3
+wmclass=vivaldi
+wmclassmatch=2
