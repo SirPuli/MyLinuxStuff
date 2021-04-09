@@ -39,7 +39,7 @@ SAVEHIST=5000
 
 
 alias sp='sudo pacman'
-alias update='sudo pacman -Syyu'
+alias pup='sudo pacman -Syyu'
 alias aup="pamac upgrade --aur"
 alias grubup="sudo update-grub"
 alias orphend="sudo pacman -Rns $(pacman -Qtdq)"
@@ -53,6 +53,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias ls='ls --color=auto'
+alias lsl='ls -l --color=auto'
 alias dir='dir --color=auto'
 alias vdir='vdir --color=auto'
 alias grep='grep --color=auto'
@@ -73,8 +74,8 @@ alias shutdown='shutdown -h now "Ye"'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+neofetch
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/sirpuli/.sdkman"
 [[ -s "/home/sirpuli/.sdkman/bin/sdkman-init.sh" ]] && source "/home/sirpuli/.sdkman/bin/sdkman-init.sh"
-
-neofetch
