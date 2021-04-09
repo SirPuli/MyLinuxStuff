@@ -33,9 +33,58 @@ desktoprule=3
 wmclass=lutris
 wmclassmatch=1
 
+[Settings for Minecraft]
+Description=Settings for Minecraft
+desktop=3
+desktoprule=3
+wmclass=minecraft
+wmclassmatch=1
+
+[Settings for MultiMC]
+Description=Settings for MultiMC
+desktop=3
+desktoprule=3
+wmclass=multimc
+wmclassmatch=1
+
+[Settings for QEMU]
+Description=Settings for QEMU
+desktop=2
+desktoprule=3
+wmclass=qemu
+wmclassmatch=2
+
+[Settings for Steam]
+Description=Settings for Steam
+desktop=3
+desktoprule=3
+wmclass=steam
+wmclassmatch=2
+
+[Settings for Virtual Manager]
+Description=Settings for Virtual Manager
+desktop=2
+desktoprule=3
+wmclass=virtual manager
+wmclassmatch=2
+
 [Settings for Vivaldi]
 Description=Settings for Vivaldi
 desktop=1
 desktoprule=3
 wmclass=vivaldi
+wmclassmatch=2
+
+[Settings for WineDesktop]
+Description=Settings for WineDesktop
+desktop=3
+desktoprule=3
+wmclass=winedesktop
+wmclassmatch=2
+
+[Settings for zoom]
+Description=Settings for zoom
+desktop=2
+desktoprule=3
+wmclass=zoom
 wmclassmatch=2
