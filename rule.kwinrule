@@ -12,6 +12,13 @@ desktoprule=3
 wmclass=diablo
 wmclassmatch=2
 
+[Settings for Discord]
+Description=Settings for Discord
+desktop=5
+desktoprule=3
+wmclass=discord
+wmclassmatch=2
+
 [Settings for Heroes]
 Description=Settings for Heroes
 desktop=3
@@ -44,6 +51,8 @@ wmclassmatch=1
 Description=Settings for MultiMC
 desktop=3
 desktoprule=3
+fullscreen=true
+fullscreenrule=3
 wmclass=multimc
 wmclassmatch=1
 
@@ -59,6 +68,20 @@ Description=Settings for Steam
 desktop=3
 desktoprule=3
 wmclass=steam
+wmclassmatch=2
+
+[Settings for Teamspeak]
+Description=Settings for Teamspeak
+desktop=5
+desktoprule=3
+wmclass=teamspeak
+wmclassmatch=2
+
+[Settings for Terminator]
+Description=Settings for Terminator
+desktop=4
+desktoprule=3
+wmclass=terminator
 wmclassmatch=2
 
 [Settings for Virtual Manager]

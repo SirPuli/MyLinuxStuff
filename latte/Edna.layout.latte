@@ -35,7 +35,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][13][Applets][44][Configuration]
-PreloadWeight=71
+PreloadWeight=53
 
 [Containments][13][Applets][44][Configuration][ConfigDialog]
 DialogHeight=591
@@ -56,7 +56,7 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][13][Applets][46][Configuration]
-PreloadWeight=20
+PreloadWeight=0
 
 [Containments][13][Applets][47]
 immutability=1
@@ -212,33 +212,12 @@ DialogWidth=800
 [Containments][15][Applets][131][Shortcuts]
 global=
 
-[Containments][15][Applets][134]
-immutability=1
-plugin=menuX
-
-[Containments][15][Applets][134][Configuration]
-PreloadWeight=100
-
-[Containments][15][Applets][134][Configuration][ConfigDialog]
-DialogHeight=600
-DialogWidth=800
-
-[Containments][15][Applets][134][Configuration][General]
-alphaSort=true
-favoriteSystemActions=logout
-favoritesPortedToKAstats=true
-limitDepth=true
-recentOrdering=1
-showIconsRootLevel=true
-showRecentApps=false
-showRecentDocs=false
-
 [Containments][15][Applets][138]
 immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][15][Applets][138][Configuration]
-PreloadWeight=75
+PreloadWeight=42
 
 [Containments][15][Applets][138][Configuration][Calendar]
 firstDayOfWeek=1
@@ -256,8 +235,8 @@ v71Migration=true
 v72Migration=true
 
 [Containments][15][Applets][138][Configuration][Google Calendar]
-accessToken=ya29.a0AfH6SMBCBAXn909gk9K7WH-KGYb_38KJY_TDZuyqNYHXS30atAb-a57rgk-ue8eUV57C0hEbu046m7XwV4rV0WTPhpcCzTBREFl2fVrDqBN_jC7oqRMQKdg0ivRVTsSYJTvBefBffVeOQtpxsFaySqRg4doTafw
-accessTokenExpiresAt=3092240057
+accessToken=ya29.a0AfH6SMCIdq-cyx0urlQKsWVByfccjyBEhDVMNXOyxQ-ouT4hIEyiUuYRb_AQgqdKqbkBnVd3qHQiGV21xJzpyX7M1BlPDEuIS5ho71EZK6huWHkcHv2pMBGlM_CtBBi57aP1iESouDI0Uc6H6mwylz20KrvDjYI
+accessTokenExpiresAt=3619884375
 accessTokenType=Bearer
 calendarIdList=gergopauli2@gmail.com
 calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU1MTcxODMzNzU0OTAwMFwiIiwiaWQiOiJlbi5odW5nYXJpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiSG9saWRheXMgaW4gSHVuZ2FyeSIsImRlc2NyaXB0aW9uIjoiSG9saWRheXMgYW5kIE9ic2VydmFuY2VzIGluIEh1bmdhcnkiLCJ0aW1lWm9uZSI6IkV1cm9wZS9CdWRhcGVzdCIsImNvbG9ySWQiOiIxNyIsImJhY2tncm91bmRDb2xvciI6IiM5YTljZmYiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNTUxNzE4MzM3NTQ5MDAwXCIiLCJpZCI6Imh1Lmh1bmdhcmlhbiNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiLDnG5uZXBuYXBvayDigJMgTWFneWFyb3JzesOhZyIsImRlc2NyaXB0aW9uIjoiw5xubmVwbmFwb2sgw6lzIGhhZ3lvbcOhbnlvayDigJMgTWFneWFyb3JzesOhZyIsInRpbWVab25lIjoiRXVyb3BlL0J1ZGFwZXN0IiwiY29sb3JJZCI6IjE3IiwiYmFja2dyb3VuZENvbG9yIjoiIzlhOWNmZiIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE1NTM1MDk0MjI2MDIwMDBcIiIsImlkIjoiYWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29tIiwic3VtbWFyeSI6IlN6w7xsZXTDqXNuYXBvayIsImRlc2NyaXB0aW9uIjoiTWVnamVsZW7DrXRpIGEgR29vZ2xlIE7DqXZqZWd5ZWtiZW4gc3plcmVwbMWRIHN6ZW3DqWx5ZWsgc3rDvGxldMOpc25hcGrDoXQsIMOpdmZvcmR1bMOzaXQgw6lzIG3DoXMgZXNlbcOpbnllaW5layBkw6F0dW1haXQuIiwidGltZVpvbmUiOiJFdXJvcGUvQnVkYXBlc3QiLCJzdW1tYXJ5T3ZlcnJpZGUiOiJDb250YWN0cyIsImNvbG9ySWQiOiIxNyIsImJhY2tncm91bmRDb2xvciI6IiM5YTljZmYiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJyZWFkZXIiLCJkZWZhdWx0UmVtaW5kZXJzIjpbXSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX0seyJraW5kIjoiY2FsZW5kYXIjY2FsZW5kYXJMaXN0RW50cnkiLCJldGFnIjoiXCIxNjE1Mjg3Nzg0ODAxMDAwXCIiLCJpZCI6ImdlcmdvcGF1bGkyQGdtYWlsLmNvbSIsInN1bW1hcnkiOiJnZXJnb3BhdWxpMkBnbWFpbC5jb20iLCJ0aW1lWm9uZSI6IkV1cm9wZS9CdWRhcGVzdCIsImNvbG9ySWQiOiIxNSIsImJhY2tncm91bmRDb2xvciI6IiM5ZmM2ZTciLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwic2VsZWN0ZWQiOnRydWUsImFjY2Vzc1JvbGUiOiJvd25lciIsImRlZmF1bHRSZW1pbmRlcnMiOlt7Im1ldGhvZCI6InBvcHVwIiwibWludXRlcyI6MTB9XSwibm90aWZpY2F0aW9uU2V0dGluZ3MiOnsibm90aWZpY2F0aW9ucyI6W3sidHlwZSI6ImV2ZW50Q3JlYXRpb24iLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2hhbmdlIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudENhbmNlbGxhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRSZXNwb25zZSIsIm1ldGhvZCI6ImVtYWlsIn1dfSwicHJpbWFyeSI6dHJ1ZSwiY29uZmVyZW5jZVByb3BlcnRpZXMiOnsiYWxsb3dlZENvbmZlcmVuY2VTb2x1dGlvblR5cGVzIjpbImhhbmdvdXRzTWVldCJdfX1d
@@ -283,12 +262,35 @@ noWindowText=Desktop
 DialogHeight=1019
 DialogWidth=1920
 
+[Containments][15][Applets][143]
+immutability=1
+plugin=org.kde.plasma.systemloadviewer
+
+[Containments][15][Applets][143][Configuration]
+PreloadWeight=42
+
+[Containments][15][Applets][147]
+immutability=1
+plugin=org.kde.plasma.kickerdash
+
+[Containments][15][Applets][147][Configuration]
+PreloadWeight=92
+
+[Containments][15][Applets][147][Configuration][ConfigDialog]
+DialogHeight=600
+DialogWidth=800
+
+[Containments][15][Applets][147][Configuration][General]
+alphaSort=true
+favoriteSystemActions=logout
+favoritesPortedToKAstats=true
+
 [Containments][15][Applets][56]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][15][Applets][56][Configuration]
-PreloadWeight=100
+PreloadWeight=77
 SystrayContainmentId=13
 
 [Containments][15][Applets][57]
@@ -341,7 +343,7 @@ alignmentUpgraded=true
 animationLauncherBouncing=false
 animationWindowAddedInGroup=false
 animationWindowInAttention=false
-appletOrder=134;139;103;138;131;56
+appletOrder=147;139;103;138;143;131;56
 appletShadowsEnabled=false
 autoSizeEnabled=false
 dragActiveWindowEnabled=true
@@ -352,6 +354,7 @@ hideScreenGapForMaximized=true
 iconSize=28
 inConfigureAppletsMode=true
 lengthExtMargin=2
+lockedZoomApplets=147;139;103;138;131;56
 maxLength=96
 panelPosition=10
 panelSize=100
@@ -420,7 +423,7 @@ PreloadWeight=0
 [Containments][16][Applets][59][Configuration][General]
 hoverAction=PreviewWindows
 isInLatteDock=true
-launchers59=applications:vivaldi-stable.desktop,applications:teamspeak3.desktop,applications:net.lutris.Lutris.desktop,applications:systemsettings.desktop,applications:org.kde.ksysguard.desktop,applications:org.kde.kate.desktop,applications:org.kde.dolphin.desktop,applications:gimp.desktop,applications:org.manjaro.pamac.manager.desktop
+launchers59=applications:vivaldi-stable.desktop,applications:terminator.desktop,applications:teamspeak3.desktop,applications:net.lutris.Lutris.desktop,applications:systemsettings.desktop,applications:org.kde.ksysguard.desktop,applications:org.kde.kate.desktop,applications:org.kde.dolphin.desktop,applications:gimp.desktop,applications:org.manjaro.pamac.manager.desktop
 manualScrollTasksType=VerticalHorizontal
 scrollTasksEnabled=true
 

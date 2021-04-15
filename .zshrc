@@ -71,10 +71,15 @@ alias exstat='expressvpn status'
 alias neofetch='neofetch | lolcat'
 alias swapoff='sudo swapoff -a'
 alias shutdown='shutdown -h now "Ye"'
+alias udo='sudo'
+alias xit='exit'
+alias c='clear'
+alias lol='lolcat'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 neofetch
+#cowsay Hello $USER!
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/sirpuli/.sdkman"
