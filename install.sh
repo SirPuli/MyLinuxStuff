@@ -21,9 +21,6 @@ done
 
 ###Installing from oficial repos
 
-sudo echo [multilib] > /etc/pacman.conf
-sudo echo Include = /etc/pacman.d/mirrorlist > /etc/pacman.conf
-
 sudo pacman -S --needed git base-devel wget lolcat htop noto-fonts-emoji
 sudo pacman -S --needed lutris steam wine-staging winetricks lib32-gnutls lib32-libldap libgpg-error lib32-libgpg-error lib32-sqlite dosbox
 sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader lib32-libpulse
@@ -33,13 +30,6 @@ sudo pacman -S --needed giflib lib32-giflib libpng lib32-libpng libldap gnutls m
 
 sudo pacman -S --needed gimp smplayer teamspeak3 discord parcellite qemu virt-manager edk2-ovmf terminator cmatrix sl
 
-###Installing yay
-YAY_INSTALL_DIR="/tmp/yay"
-
-sudo git clone https://aur.archlinux.org/yay.git $YAY_INSTALL_DIR
-sudo chown -R $USER $YAY_INSTALL_DIR
-cd $YAY_INSTALL_DIR
-makepkg -si
 
 
 ###Installing from aur
@@ -49,7 +39,7 @@ yay -S etcher-bin expressvpn expressvpn-gui intellij-idea-ultimate-edition multi
 ###Installing GE Proton
 install_ge_proton(){
     DEFAULT_GE_VERSION="6.5-GE-2"
-    PROTON_DIR="$HOME_DIR/.steam/root/compatibilitytools.d/"
+    PROTON_DIR="$HOME_DIR/.steam/root/compatibilitytools.d/"y
 
     mkdir $PROTON_DIR
 
