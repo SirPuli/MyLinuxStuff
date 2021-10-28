@@ -78,7 +78,7 @@ alias lol='lolcat'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-neofetch
+fastfetch
 #cowsay Hello $USER!
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!

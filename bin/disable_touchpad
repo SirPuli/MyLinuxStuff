@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DEVICE = 'Synaptics TM3336-00'
+
+ENABLED = $(xinput list-props "$DEVICE" | awk '/^\tDevice Enabled \([0-9]+\):\t[01]/ {print $NF}')
+
+case $enabled in
+  0)
+    xinput enable "$DEVICE"
+    ;;
+  1)
+    xinput disable "$DEVICE"
+    ;;
+esac
